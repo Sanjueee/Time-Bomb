@@ -1,0 +1,88 @@
+
+@font-face {
+  font-family: 'LEDFont';
+  src: url("digitalfont.ttf") format('truetype');
+}
+
+body{
+   padding-top:4cm;
+    background-color: hsl(0, 2%, 25%);  
+}
+#container{
+    margin:auto;
+    border-radius: 20px;
+    padding-top:25px;
+    padding-bottom:25px;
+    width: 12cm;
+    border:none;
+    background-color: rgb(45, 43, 43);
+    color:aliceblue;
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+#enter{
+    text-align: center;
+    padding-bottom: 0.5cm;  
+      color: aliceblue;
+      display: block ;
+      margin-left:auto;
+      margin-right: auto;
+     font-family: monospace;
+     font-size: 40px;
+}
+
+input{
+   border-radius: 5px;
+    font-family: 'LEDFont', monospace;
+    font-size: 20px;
+    background-color: black;
+    color:#2aab13;
+    width:2cm;
+    height: 1cm;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+   
+}
+
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+  display: none;
+}
+
+#button-12 {
+  font-weight: bold;
+  font-size: 25px;
+  width: 2.5cm;
+  height: 1.2cm;
+  padding: 6px 14px;
+  font-family:  monospace;
+  border-radius: 6px;
+  border: none;
+  background: #6E6D70;
+  box-shadow: 2px 2px 5px rgba(28, 73, 28, 0.1), inset 0px 0.5px 0.5px rgba(40, 103, 20, 0.5), 0px 0px 0px 0.5px rgb(31, 82, 5);
+  color: #43fb00;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.25s;
+}
+
+#button-12:active {
+    color:rgb(28, 204, 12);
+  outline: 0;
+}
+#button-12.stop {
+    border: none;
+    color:rgb(204, 12, 12);
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(243, 5, 5, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(239, 6, 6, 0.5);
+  outline: 0;
+}
